@@ -44,9 +44,14 @@ html,
 body {
   max-width: 2560px;
   margin: 0 auto;
-  background: #000000;
 }
 
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* Scrollbar */
 
 ::-webkit-scrollbar {
