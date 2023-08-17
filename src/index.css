@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/axiforma/Axiforma-Regular.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/public/fonts/axiforma/Axiforma-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/public/fonts/axiforma/Axiforma-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/axiforma/Axiforma-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Axiforma-Private";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/public/fonts/axiforma/Axiforma-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Pizzicato-Private";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/pizzicato/Pizzicato-Regular.ttf");
+}
+
+html,
+body {
+  max-width: 2560px;
+  margin: 0 auto;
+  background: #000000;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(162, 162, 167);
+  border-radius: 100px;
+}
+
+.slideIn {
+  transform: translateY(-82px);
+  opacity: 0;
+}
+
+.slideIn.active {
+  opacity: 1;
+  transition: all ease 1000ms;
+  transform: translateY(0px);
+}
+
+[data-sal|="fade-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-sal|="fade-up"].sal-animate {
+  opacity: 1;
+  transform: translateY(0);
 }
