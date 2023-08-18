@@ -63,7 +63,7 @@ export const Navbar = ({
               </Button>
               {md || (
                 <IconButton
-                  sx={{ color: "white.main" }}
+                  color="secondary"
                   onClick={() => setIsMenuVisible(!isMenuVisible)}
                 >
                   {isMenuVisible ? <CloseOutlined /> : <Menu />}

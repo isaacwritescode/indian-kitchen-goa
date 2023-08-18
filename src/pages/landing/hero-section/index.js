@@ -24,11 +24,11 @@ export default function HeroSection() {
           variant="body1"
           mb={4}
           fontWeight={500}
-          maxWidth={360}
+          maxWidth={320}
           textAlign="center"
           color="#ffffff90"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          We provide affordable and premium stays in the heart of goa
         </Typography>
       </Stack>
     </Stack>

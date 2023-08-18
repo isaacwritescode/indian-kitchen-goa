@@ -1,3 +1,4 @@
+import FAQ from "./faq";
 import HeroSection from "./hero-section";
 import Offerings from "./offerings";
 import StatBlock from "./stat-block";
@@ -8,6 +9,7 @@ export default function Landing() {
     <HeroSection />
     <StatBlock />
     <Offerings />
+    <FAQ />
     <Testimonials />
   </>
 }
