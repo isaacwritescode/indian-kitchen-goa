@@ -8,6 +8,7 @@ import AroundUs from "./pages/around-us";
 import CasaNemo from "./pages/casa-nemo";
 import Landing from "./pages/landing";
 import LoveShack from "./pages/love-shack";
+import QuintaSouzaLopes from "./pages/quinta-souza-lopes";
 import Restaurant from "./pages/restaurant";
 import Rooms from "./pages/rooms";
 
@@ -56,7 +57,7 @@ export default function Main() {
       <Route path="around-us" element={<AroundUs />} />
       <Route path="apartments" element={<Apartments />} />
       <Route path="family-businesses/casa-nemo" element={<CasaNemo />} />
-      <Route path="family-businesses/quinta-souza-lopes" element={<CasaNemo />} />
+      <Route path="family-businesses/quinta-souza-lopes" element={<QuintaSouzaLopes />} />
     </Route>
   </Routes>
 }

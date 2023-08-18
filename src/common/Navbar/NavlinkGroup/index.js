@@ -8,11 +8,11 @@ export const NavlinkGroup = ({ fontColor }) => {
   return <Stack direction="row" spacing={1}>
     {NAVBAR_LINKS.map(({ title, path, label, color }, idx) => {
       return fontColor === "white" ?
-        <Stack key={idx} direction="row" spacing={1} alignItems="center" p={1} borderRadius={3} sx={{ "&:hover": { bgcolor: "#ffffff30" }, cursor: "pointer" }}>
-          <WavyLink
-            to={path}
-            color={color}
-          >
+        <WavyLink
+          to={path}
+          color={color}
+        >
+          <Stack key={idx} direction="row" spacing={1} alignItems="center" p={1} borderRadius={3} sx={{ "&:hover": { bgcolor: "#ffffff30" }, cursor: "pointer" }}>
             <Typography
               fontWeight={500}
               variant="body2"
@@ -21,20 +21,22 @@ export const NavlinkGroup = ({ fontColor }) => {
                 position: "relative",
                 color:
                   pathname === path || pathname.includes(path + "/")
-                  ? "white"
-                  : "#ffffff90",
+                    ? "white"
+                    : "#ffffff90",
                 transition: "all ease 0.3s",
               }}
             >
               {title}
-            </Typography></WavyLink>
-          {label && <Chip color="blueCust" size="small" label={label} />}
-        </Stack> :
-        <Stack key={idx} direction="row" spacing={1} alignItems="center" p={1} borderRadius={3} sx={{ "&:hover": { bgcolor: "#00000010" }, cursor: "pointer" }}>
-          <WavyLink
-            to={path}
-            color={color}
-          >
+            </Typography>
+            {label && <Chip color="blueCust" size="small" label={label} />}
+          </Stack>
+        </WavyLink>
+        :
+        <WavyLink
+          to={path}
+          color={color}
+        >
+          <Stack key={idx} direction="row" spacing={1} alignItems="center" p={1} borderRadius={3} sx={{ "&:hover": { bgcolor: "#00000010" }, cursor: "pointer" }}>
             <Typography
               fontWeight={500}
               variant="body2"
@@ -49,9 +51,10 @@ export const NavlinkGroup = ({ fontColor }) => {
               }}
             >
               {title}
-            </Typography></WavyLink>
-          {label && <Chip color="blueCust" size="small" label={label} />}
-        </Stack>
+            </Typography>
+            {label && <Chip color="blueCust" size="small" label={label} />}
+          </Stack>
+        </WavyLink>
     })}
-  </Stack>
+  </Stack >
 }
