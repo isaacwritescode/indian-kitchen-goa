@@ -1,4 +1,4 @@
-export const APARTMENTS = [
+export const INFO = [
   {
     label: "Rooms",
     title: "Affordable Sanctuaries: Unveiling Our Rooms in Baga",

@@ -1,6 +1,6 @@
 import { AcUnit, Bed, FireExtinguisher, RoomService, Wifi } from "@mui/icons-material";
 import { Details } from "../../templates/details";
-import { APARTMENTS } from "./constants";
+import { INFO } from "../casa-nemo/constants";
 
 const AMENITIES = [{
   title: "WiFi",
@@ -29,7 +29,7 @@ export default function Apartments() {
     label="We've got"
     title="apartments"
     desc="Luxury & budget rooms for every type of traveller"
-    info={APARTMENTS}
+    info={INFO}
     amenities={AMENITIES}
     collage />
 }

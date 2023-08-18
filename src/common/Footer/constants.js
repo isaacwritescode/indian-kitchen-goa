@@ -8,7 +8,7 @@ export const FOOTER_LINKS = {
   "family businesses": [
     { item: "Souza lopes Comforts", url: "https://souzalopescomforts.com" },
     { item: "Love shack", path: "/love-shack" },
-    { item: "Casa Nemo", url: "https://souzalopescomforts.blogspot.com/p/casa-nemo.html" },
-    { item: "Quinta Souza lopes", url: "https://souzalopescomforts.blogspot.com/p/quinta-souza-lopes.html" },
+    { item: "Casa Nemo", path: "/family-businesses/casa-nemo" },
+    { item: "Quinta Souza lopes",path: "/family-businesses/quinta-souza-lopes" },
   ],
 };
