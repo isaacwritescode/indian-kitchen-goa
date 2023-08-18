@@ -25,9 +25,4 @@ export const NAVBAR_LINKS = [
     path: "/apartments",
     color: "#06A9A3"
   },
-  {
-    title: "contact",
-    path: "/contact",
-    color: "#F39813"
-  }
 ];

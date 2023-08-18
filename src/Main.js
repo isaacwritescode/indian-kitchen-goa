@@ -3,7 +3,13 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import sal from "sal.js";
 import "sal.js/dist/sal.css";
 import Layout from "./layout";
+import Apartments from "./pages/apartments";
+import AroundUs from "./pages/around-us";
 import Landing from "./pages/landing";
+import LoveShack from "./pages/love-shack";
+import Restaurant from "./pages/restaurant";
+import Rooms from "./pages/rooms";
+
 
 export default function Main() {
   const location = useLocation()
@@ -42,6 +48,12 @@ export default function Main() {
       }
     >
       <Route index element={<Landing />} />
+      <Route path="rooms" element={<Rooms />} />
+      <Route path="rooms" element={<Rooms />} />
+      <Route path="love-shack" element={<LoveShack />} />
+      <Route path="restaurant" element={<Restaurant />} />
+      <Route path="around-us" element={<AroundUs />} />
+      <Route path="apartments" element={<Apartments />} />
     </Route>
   </Routes>
 }

@@ -1,6 +1,8 @@
 import { Divider, Grid, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { WavyLink } from 'react-wavy-transitions';
 import { Link } from "../Link";
+import { NAVBAR_LINKS } from "../Navbar/constants";
 import { SocialLinks } from "./SocialLinks";
 import { FOOTER_LINKS } from "./constants";
 
@@ -28,15 +30,28 @@ const Footer = () => {
                 >
                   {category}
                 </Typography>
-                {FOOTER_LINKS[category].map(({ item, url, path }, idx) => (
-                  <Link key={idx} url={url} path={path} component={<Typography
+                {FOOTER_LINKS[category].map(({ item, url, path }, idx) => {
+                  return url ? <Link key={idx} url={url} component={<Typography
                     variant="body1"
                     color="#ffffff80"
-                    sx={{ fontWeight: 500, textTransform: "capitalize" }}
+                    sx={{ fontWeight: 500, textTransform: "capitalize", pl: 1 }}
                   >
                     {item}
-                  </Typography>} />
-                ))}
+                  </Typography>} /> :
+                    <WavyLink
+                      to={path}
+                      color={NAVBAR_LINKS.filter(elem => elem.title === item.toLowerCase())[0]?.color || "#ffffff"}
+                    >
+                      <Typography
+                        variant="body1"
+                        color="#ffffff80"
+                        sx={{ fontWeight: 500, textTransform: "capitalize", textAlign: "start" }}
+                      >
+                        {item}
+                      </Typography>
+                    </WavyLink>
+                }
+                )}
               </Stack>
             ))}
           </Box>
