@@ -2,11 +2,11 @@ import { Grid, Typography } from "@mui/material";
 import { Box, Stack } from "@mui/system";
 
 export default function Info({ INFO }) {
-  return <Box maxWidth={1000} mx="auto" my={12}>
-    <Stack spacing={8}>
+  return <Box maxWidth={1000} mx="auto" my={12} width={{ xs: "90%", lg: "100%" }}>
+    <Stack spacing={12}>
       {INFO.map(({ label, title, desc, img }, idx) =>
         <Box key={idx}>
-          <Grid container direction={idx % 2 === 1 ? "row-reverse" : "row"} spacing={{ xs: 3, md: 6 }} alignItems="center">
+          <Grid container direction={idx % 2 === 1 ? "row-reverse" : "row"} columns={{ xs: 6, md: 12 }} spacing={{ xs: 3, md: 6 }} alignItems="center">
             <Grid item xs={6}>
               <Stack alignItems="start">
                 <Typography variant="body1" textTransform="uppercase" fontWeight={500}>{label}</Typography>
