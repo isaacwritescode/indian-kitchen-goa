@@ -6,6 +6,7 @@ import Layout from "./layout";
 import Apartments from "./pages/apartments";
 import AroundUs from "./pages/around-us";
 import CasaNemo from "./pages/casa-nemo";
+import ContactUs from "./pages/contact";
 import Landing from "./pages/landing";
 import LoveShack from "./pages/love-shack";
 import QuintaSouzaLopes from "./pages/quinta-souza-lopes";
@@ -56,6 +57,7 @@ export default function Main() {
       <Route path="restaurant" element={<Restaurant />} />
       <Route path="around-us" element={<AroundUs />} />
       <Route path="apartments" element={<Apartments />} />
+      <Route path="contact-us" element={<ContactUs />} />
       <Route path="family-businesses/casa-nemo" element={<CasaNemo />} />
       <Route path="family-businesses/quinta-souza-lopes" element={<QuintaSouzaLopes />} />
     </Route>

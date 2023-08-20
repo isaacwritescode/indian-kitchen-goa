@@ -3,7 +3,7 @@ export const FOOTER_LINKS = {
     { item: "rooms", path: "/rooms" },
     { item: "restaurant", path: "/restaurant" },
     { item: "apartments", path: "/apartments" },
-    { item: "contact", path: "/contact" },
+    { item: "contact us", path: "/contact-us" },
   ],
   "family businesses": [
     { item: "Souza lopes Comforts", url: "https://souzalopescomforts.com" },

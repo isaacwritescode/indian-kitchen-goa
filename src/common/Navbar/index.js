@@ -3,6 +3,7 @@ import { Button, IconButton, Stack, useMediaQuery } from "@mui/material";
 import { Box, useTheme } from "@mui/system";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { WavyLink } from "react-wavy-transitions";
 import { Link } from "../Link";
 import { NavlinkGroup } from "./NavlinkGroup";
 
@@ -60,9 +61,14 @@ export const Navbar = ({
             />
             {md && <NavlinkGroup fontColor="white" />}
             <Stack direction="row" spacing={2}>
-              <Button size="large" variant="outlined" color="secondary">
-                Contact us
-              </Button>
+              <WavyLink
+                to="contact-us"
+                color="#FFB90B"
+              >
+                <Button size="large" variant="outlined" color="secondary">
+                  Contact us
+                </Button>
+              </WavyLink>
               {md || (
                 <IconButton
                   color="secondary"
@@ -109,9 +115,14 @@ export const Navbar = ({
             />
             {md && <NavlinkGroup fontColor="black" />}
             <Stack direction="row" spacing={2}>
-              <Button size="large" variant="contained">
-                Contact us
-              </Button>
+              <WavyLink
+                to="contact-us"
+                color="#FFB90B"
+              >
+                <Button size="large" variant="contained">
+                  Contact us
+                </Button>
+              </WavyLink>
               {md || (
                 <IconButton
                   sx={{ color: "white.main" }}
