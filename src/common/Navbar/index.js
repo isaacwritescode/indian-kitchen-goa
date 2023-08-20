@@ -61,7 +61,7 @@ export const Navbar = ({
             {md && <NavlinkGroup fontColor="white" />}
             <Stack direction="row" spacing={2}>
               <Button size="large" variant="outlined" color="secondary">
-                Book now
+                Contact us
               </Button>
               {md || (
                 <IconButton
@@ -110,7 +110,7 @@ export const Navbar = ({
             {md && <NavlinkGroup fontColor="black" />}
             <Stack direction="row" spacing={2}>
               <Button size="large" variant="contained">
-                Book now
+                Contact us
               </Button>
               {md || (
                 <IconButton

@@ -13,7 +13,7 @@ export default function Hero() {
       alignItems="center"
     >
       <Grid item xs={6}>
-        <img src="/images/quinta-souza-lopes-logo.svg" width="100%" />
+        <img src="/images/casa-nemo-hero-wp.svg" width="100%" />
       </Grid>
       <Grid item xs={6}>
         <img src="/images/casa-nemo-amenities.svg" width="100%" />
