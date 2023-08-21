@@ -1,4 +1,4 @@
-import { CloseOutlined, Menu } from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 import { Button, IconButton, Stack, useMediaQuery } from "@mui/material";
 import { Box, useTheme } from "@mui/system";
 import { useEffect, useRef } from "react";
@@ -74,7 +74,7 @@ export const Navbar = ({
                   color="secondary"
                   onClick={() => setIsMenuVisible(!isMenuVisible)}
                 >
-                  {isMenuVisible ? <CloseOutlined /> : <Menu />}
+                  <Menu />
                 </IconButton>
               )}
             </Stack>
@@ -128,7 +128,7 @@ export const Navbar = ({
                   sx={{ color: "white.main" }}
                   onClick={() => setIsMenuVisible(!isMenuVisible)}
                 >
-                  {isMenuVisible ? <CloseOutlined /> : <Menu />}
+                  <Menu />
                 </IconButton>
               )}
             </Stack>
