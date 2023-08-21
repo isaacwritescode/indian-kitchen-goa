@@ -32,11 +32,12 @@ export const Menu = ({ setIsMenuVisible }) => {
             <CloseOutlined />
           </IconButton>
           <Stack m="auto" width="90%" py={2} alignSelf="center">
-            {NAVBAR_LINKS.map(({ title, path }, idx) => (
+            {NAVBAR_LINKS.map(({ title, path, color }, idx) => (
               <MenuLink
                 key={idx}
                 title={title}
                 path={path}
+                color={color}
                 setIsMenuVisible={setIsMenuVisible}
               >
                 {title}

@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { WavyLink } from "react-wavy-transitions";
 
-export const MenuLink = ({ path, children, setIsMenuVisible }) => {
+export const MenuLink = ({ path, color, children, setIsMenuVisible }) => {
   const { pathname } = useLocation();
   return <Box
     m="auto"
@@ -10,6 +10,7 @@ export const MenuLink = ({ path, children, setIsMenuVisible }) => {
   >
     <WavyLink
       to={path}
+      color={color}
     >
       <Typography
         variant="h5"

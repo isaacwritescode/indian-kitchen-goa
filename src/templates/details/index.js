@@ -7,12 +7,12 @@ import Info from "../info";
 export const Details = ({ label, title, desc, info, collage, amenities }) => {
   return <Box width="100%" my={16}>
     <Box maxWidth={1400} m="auto" pb={12} >
-      <Box textAlign="center" py={6} width={{xs: "90%", md: "100%"}} m="auto">
+      <Box textAlign="center" py={6} width={{ xs: "90%", md: "100%" }} m="auto">
         <Typography variant="body1" textTransform="uppercase" fontWeight={500} color={NAVBAR_LINKS.filter(elem => elem.title === title)[0].color}>{label}</Typography>
-        <Typography variant="h1" fontSize={160} textTransform="uppercase" fontFamily="pizzicato-private">{title}</Typography>
+        <Typography variant="h1" fontSize={{ xs: 80, md: 160 }} textTransform="uppercase" fontFamily="pizzicato-private">{title}</Typography>
         <Typography variant="body1" color="text.secondary">{desc}</Typography>
       </Box>
-      {collage && <Box py={6} width={{xs: "90%", md: "100%"}} m="auto">
+      {collage && <Box py={6} width={{ xs: "90%", md: "100%" }} m="auto">
         <Stack direction="row" gap={{ xs: 1.5, sm: 3 }} alignItems="center">
           <Box flex={1} visibility="hidden" display={{ xs: "none", md: "block" }}>
             <img src="/images/01.png" alt="img" width="100%" />
@@ -32,7 +32,7 @@ export const Details = ({ label, title, desc, info, collage, amenities }) => {
           </Box>
         </Stack>
       </Box>}
-      {amenities && <Box py={6} width={{xs: "90%", md: "100%"}} m="auto">
+      {amenities && <Box py={6} width={{ xs: "90%", md: "100%" }} m="auto">
         <Typography variant="h3" textAlign="center" fontWeight={600} color="text.primary">Amenities</Typography>
         <Box m="auto" width="fit-content">
           <Stack direction="row" gap={3} py={6} width="100%" flexWrap="wrap" justifyContent="center">
@@ -57,5 +57,5 @@ export const Details = ({ label, title, desc, info, collage, amenities }) => {
       </Box>}
       {info && <Info INFO={info} />}
     </Box>
-  </Box>
+  </Box >
 }
