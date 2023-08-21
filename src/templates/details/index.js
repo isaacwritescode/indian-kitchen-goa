@@ -9,7 +9,7 @@ export const Details = ({ label, title, desc, info, collage, amenities }) => {
     <Box maxWidth={1400} m="auto" pb={12} >
       <Box textAlign="center" py={6} width={{ xs: "90%", md: "100%" }} m="auto">
         <Typography variant="body1" textTransform="uppercase" fontWeight={500} color={NAVBAR_LINKS.filter(elem => elem.title === title)[0].color}>{label}</Typography>
-        <Typography variant="h1" fontSize={{ xs: 80, md: 160 }} textTransform="uppercase" fontFamily="pizzicato-private">{title}</Typography>
+        <Typography variant="h1" fontSize={{ xs: 80, md: 160 }} textTransform="uppercase" fontFamily="pizzicato-private">{title}</Typography> 
         <Typography variant="body1" color="text.secondary">{desc}</Typography>
       </Box>
       {collage && <Box py={6} width={{ xs: "90%", md: "100%" }} m="auto">
