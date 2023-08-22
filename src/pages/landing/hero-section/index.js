@@ -6,7 +6,7 @@ export default function HeroSection() {
     <Stack
       justifyContent="center"
       style={{
-        backgroundImage: "url('/images/hero-bg.png')",
+        backgroundImage: "url('/images/hero-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
@@ -26,7 +26,7 @@ export default function HeroSection() {
           fontWeight={500}
           maxWidth={320}
           textAlign="center"
-          color="#ffffff90"
+          color="rgba(255,255,255,0.7)"
         >
           We provide affordable and premium stays in the heart of goa
         </Typography>
