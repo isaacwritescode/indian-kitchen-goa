@@ -14,7 +14,6 @@ const StatBlock = () => {
   const [onCountUpEnd, setOnCountUpEnd] = useState(false);
   return (
     <Box
-      bgcolor="black"
       width={{ xs: "90%", lg: "75%" }}
       py={6}
       pl={6}
@@ -62,7 +61,6 @@ const StatBlock = () => {
                           <Typography
                             ref={countUpRef}
                             variant="h3"
-                            color="white"
                             textTransform="capitalize"
                           >
                             {onCountUpEnd && (
@@ -76,7 +74,7 @@ const StatBlock = () => {
                   <Typography
                     variant="body1"
                     textTransform="capitalize"
-                    color="grey.400"
+                    color="grey.500"
                     width="80%"
                   >
                     {camelCaseToSentance(key)}
@@ -86,14 +84,14 @@ const StatBlock = () => {
                   (sm ? (
                     <List>
                       <Divider
-                        sx={{ borderColor: "#ffffff30", height: "48px" }}
+                        sx={{ borderColor: "#00000030", height: "48px" }}
                         orientation="vertical"
                       />
                     </List>
                   ) : (
                     <List sx={{ width: "80%", my: 4, mx: "auto" }}>
                       <Divider
-                        sx={{ borderColor: "#ffffff50" }}
+                        sx={{ borderColor: "#00000050" }}
                         orientation="horizontal"
                       />
                     </List>

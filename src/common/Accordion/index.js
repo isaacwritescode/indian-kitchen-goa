@@ -38,6 +38,7 @@ const AccordionSummary = styled((props) => (
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
+  paddingTop: 0
 }));
 
 export default function Accordion({ title, desc, expanded, onChange }) {
