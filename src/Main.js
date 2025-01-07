@@ -5,11 +5,9 @@ import "sal.js/dist/sal.css";
 import Layout from "./layout";
 import Apartments from "./pages/apartments";
 import AroundUs from "./pages/around-us";
-import CasaNemo from "./pages/casa-nemo";
 import ContactUs from "./pages/contact";
 import Landing from "./pages/landing";
 import LoveShack from "./pages/love-shack";
-import QuintaSouzaLopes from "./pages/quinta-souza-lopes";
 import Restaurant from "./pages/restaurant";
 import Rooms from "./pages/rooms";
 
@@ -51,15 +49,12 @@ export default function Main() {
       }
     >
       <Route index element={<Landing />} />
-      <Route path="rooms" element={<Rooms />} />
-      <Route path="rooms" element={<Rooms />} />
+      <Route path="casa-florinda" element={<Rooms />} />
       <Route path="love-shack" element={<LoveShack />} />
       <Route path="restaurant" element={<Restaurant />} />
       <Route path="around-us" element={<AroundUs />} />
-      <Route path="apartments" element={<Apartments />} />
+      <Route path="quinta-souza" element={<Apartments />} />
       <Route path="contact-us" element={<ContactUs />} />
-      <Route path="family-businesses/casa-nemo" element={<CasaNemo />} />
-      <Route path="family-businesses/quinta-souza-lopes" element={<QuintaSouzaLopes />} />
     </Route>
   </Routes>
 }

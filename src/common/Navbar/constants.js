@@ -5,15 +5,9 @@ export const NAVBAR_LINKS = [
     color: "#ffffff"
   },
   {
-    title: "rooms",
-    path: "/rooms",
+    title: "casa florinda",
+    path: "/casa-florinda",
     color: "#9747FF"
-  },
-  {
-    title: "restaurant",
-    path: "/restaurant",
-    label: "back soon",
-    color: "#EC733C"
   },
   {
     title: "love shack",
@@ -21,8 +15,8 @@ export const NAVBAR_LINKS = [
     color: "#2C96EA"
   },
   {
-    title: "apartments",
-    path: "/apartments",
+    title: "quinta souza",
+    path: "/quinta-souza",
     color: "#06A9A3"
   },
 ];

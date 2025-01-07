@@ -31,6 +31,9 @@ const Footer = () => {
                   {category}
                 </Typography>
                 {FOOTER_LINKS[category].map(({ item, url, path }, idx) => {
+                    const newItem = item.replace(" ", "-").toLowerCase();
+                    const color = NAVBAR_LINKS.filter((elem) => elem.path === "/" + newItem)[0]
+                      ?.color || "#ffffff";
                   return url ? <Link key={idx} url={url} component={<Typography
                     variant="body1"
                     color="#ffffff80"
@@ -40,7 +43,7 @@ const Footer = () => {
                   </Typography>} /> :
                     <WavyLink
                       to={path}
-                      color={NAVBAR_LINKS.filter(elem => elem.title === item.toLowerCase())[0]?.color || "#ffffff"}
+                      color={color}
                     >
                       <Typography
                         variant="body1"
